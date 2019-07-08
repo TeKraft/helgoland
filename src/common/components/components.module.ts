@@ -7,6 +7,7 @@ import { HelgolandModificationModule } from '@helgoland/modification';
 import { HelgolandPermalinkModule } from '@helgoland/permalink';
 import { HelgolandSelectorModule } from '@helgoland/selector';
 import { HelgolandTimeModule } from '@helgoland/time';
+// tslint:disable-next-line:max-line-length
 import { NgbAccordionModule, NgbAlertModule, NgbDatepickerModule, NgbDropdownModule, NgbTimepickerModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { ClipboardModule } from 'ngx-clipboard';
@@ -33,6 +34,7 @@ import { TimespanSelectorComponent } from './timespan-selector/timespan-selector
 import { CustomMinMaxRangeComponent } from './custom-min-max-range/custom-min-max-range.component';
 import { HelgolandCoreModule } from '@helgoland/core';
 import {CustomTimespanButtonComponent} from './custom-timespan-button/custom-timespan-button.component';
+import { DownloadAsCsvComponent } from './download-as-csv/download-as-csv.component';
 
 @NgModule({
   imports: [
@@ -71,6 +73,7 @@ import {CustomTimespanButtonComponent} from './custom-timespan-button/custom-tim
     PermalinkButtonComponent,
     TimespanSelectorComponent,
     ToClipboardComponent,
+    DownloadAsCsvComponent,
   ],
   entryComponents: [
     LocalSelectorImplComponent,
@@ -86,7 +89,8 @@ import {CustomTimespanButtonComponent} from './custom-timespan-button/custom-tim
     LocalSelectorImplComponent,
     LocateButtonComponent,
     PermalinkButtonComponent,
-    CustomTimespanButtonComponent
+    CustomTimespanButtonComponent,
+    DownloadAsCsvComponent
   ]
 })
 export class ComponentsModule { }
