@@ -1,0 +1,34 @@
+@import '../../../../variables';
+
+:host {
+    .item {
+        &+.item {
+            padding-top: 10px;
+        }
+
+        &.error {
+            display: none;
+        }
+
+        label {
+            margin-bottom: 0;
+        }
+
+        .selected {
+            color: $selection-color;
+            background-color: $selection-background-color;
+        }
+
+        :hover {
+            color: $hover-color;
+            cursor: pointer;
+            background-color: $hover-background-color;
+        }
+
+        >div {
+            padding: 5px;
+        }
+
+    }
+
+}

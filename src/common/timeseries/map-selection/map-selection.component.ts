@@ -35,7 +35,7 @@ import { TimeseriesService } from './../services/timeseries.service';
 export class TimeseriesMapSelectionComponent implements OnInit, AfterViewInit {
 
   @ViewChild('modalStation')
-  public modalTemplate: TemplateRef<any>;
+  public modalStationView: TemplateRef<any>;
 
   @ViewChild('tabset')
   public tabset: NgbTabset;
@@ -95,7 +95,7 @@ export class TimeseriesMapSelectionComponent implements OnInit, AfterViewInit {
 
   public onStationSelected(station: Station) {
     this.station = station;
-    this.modalService.open(this.modalTemplate);
+    this.modalService.open(this.modalStationView);
   }
 
   public onPhenomenonSelected(phenomenon: Phenomenon) {

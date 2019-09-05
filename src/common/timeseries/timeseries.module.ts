@@ -3,8 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { HelgolandD3Module } from '@helgoland/d3';
-import { HelgolandDatasetlistModule, HelgolandDatasetTableModule,
-    HelgolandLabelMapperModule, HelgolandDatasetDownloadModule } from '@helgoland/depiction';
+import {
+    HelgolandDatasetDownloadModule,
+    HelgolandDatasetlistModule,
+    HelgolandDatasetTableModule,
+    HelgolandLabelMapperModule,
+} from '@helgoland/depiction';
 import { HelgolandFavoriteModule } from '@helgoland/favorite';
 import { HelgolandMapControlModule, HelgolandMapSelectorModule } from '@helgoland/map';
 import { HelgolandModificationModule } from '@helgoland/modification';
@@ -20,6 +24,9 @@ import { TimeseriesDiagramComponent } from './diagram/diagram.component';
 import { LegendEntryComponent } from './diagram/legend-entry/legend-entry.component';
 import { TimeseriesFavoritesComponent } from './favorites/favorites.component';
 import { TimeseriesListSelectionComponent } from './list-selection/list-selection.component';
+import {
+    CustomDatasetByStationSelectorComponent,
+} from './map-selection/custom-dataset-by-station-selector/custom-dataset-by-station-selector.component';
 import { TimeseriesMapSelectionComponent } from './map-selection/map-selection.component';
 import { TimeseriesNavigationComponent } from './navigation/navigation.component';
 import { TimeseriesListSelectionCache } from './services/list-selection-cache.service';
@@ -101,6 +108,7 @@ export const nestedTimeseriesRoutes: Routes = [
         TimeseriesListSelectionComponent,
         TimeseriesMapSelectionComponent,
         TimeseriesFavoritesComponent,
+        CustomDatasetByStationSelectorComponent,
         LegendEntryComponent
     ],
     providers: [

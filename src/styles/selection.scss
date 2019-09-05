@@ -28,16 +28,3 @@ n52-custom-service-selector {
         }
     }
 }
-
-n52-dataset-by-station-selector {
-    .item {
-        .selected {
-            color: $selection-color;
-            background-color: $selection-background-color;
-        }
-        :hover {
-            color: $hover-color;
-            background-color: $hover-background-color;
-        }
-    }
-}
